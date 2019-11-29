@@ -9,8 +9,7 @@ def initialize(name)
 end
 
 def back_project(project)
-  @backed_projects<<project
-  Project.add_backer
+  @backed_projects<<Project.add_backer(project)
   binding.pry
 end
 
