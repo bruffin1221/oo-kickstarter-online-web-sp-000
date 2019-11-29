@@ -10,7 +10,7 @@ end
 
 def back_project(project)
   @backed_projects<<project
-  project.backer
+  project.backers<<self
   binding.pry
 end
 
