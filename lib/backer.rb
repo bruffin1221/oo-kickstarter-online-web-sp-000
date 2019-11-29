@@ -11,6 +11,7 @@ end
 def back_project(project)
   @backed_projects<<project
   Project.add_backer
+  binding.pry
 end
 
 end
